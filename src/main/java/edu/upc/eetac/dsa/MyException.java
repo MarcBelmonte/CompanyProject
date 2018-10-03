@@ -1,4 +1,5 @@
 package edu.upc.eetac.dsa;
 
-public class MyException {
+public class MyException extends Exception {
+
 }
