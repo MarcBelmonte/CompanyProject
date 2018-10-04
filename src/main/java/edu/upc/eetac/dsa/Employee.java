@@ -1,7 +1,6 @@
 package edu.upc.eetac.dsa;
 
 import java.util.Date;
-import java.util.LinkedList;
 
 public class Employee implements Comparable<Employee>{
     //Atributos
@@ -24,9 +23,6 @@ public class Employee implements Comparable<Employee>{
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSurname() {
         return surname;
@@ -48,15 +44,11 @@ public class Employee implements Comparable<Employee>{
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
     public double getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public int compareTo(Employee o) {
+        return this.getName().compareTo(o.getName());
     }
 }
